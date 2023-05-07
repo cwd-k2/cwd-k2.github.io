@@ -1,0 +1,1 @@
+import{a as t,b as n,o,e}from"./entry.e2ed6b9d.js";const s={},c={class:"container"},a=e("div",{style:{"text-align":"center"}},[e("h2",null,"BLOG")],-1),_=e("main",null,[e("p",null,"これから作るよ")],-1),l=[a,_];function r(i,d){return o(),n("div",c,l)}const h=t(s,[["render",r]]);export{h as default};

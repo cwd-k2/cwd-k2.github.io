@@ -1,0 +1,70 @@
+:root {
+  --refia-blue: #5f9fde;
+  --refia-red: #de5f6d;
+  --refia-yellow: #ded05f;
+  --refia-brown: #4a3b3e;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial",
+    "Yu Gothic", "Meiryo", sans-serif;
+  background-color: white;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+div,
+p,
+li,
+a,
+small {
+  font-size: 1.6rem;
+}
+
+a:hover {
+  color: var(--refia-red);
+}
+
+a.emphasized {
+  color: var(--refia-red);
+}
+
+a.underlined {
+  text-decoration: underline;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+@media screen and (max-width: 896px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+}

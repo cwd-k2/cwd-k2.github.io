@@ -24,31 +24,49 @@ onMounted(() => {
       <span class="material-icons" @click="open">menu</span>
     </button>
 
-    <div class="modal-area" v-if="show">
-      <div class="modal-background" @click="close"></div>
+    <Transition>
+      <div class="modal-area" v-if="show">
+        <div class="modal-background" @click="close"></div>
 
-      <div class="modal-content">
-        <div style="display: flex; justify-content: flex-end">
+        <div class="modal-content">
           <button class="modal-close" @click="close">
             <span class="material-icons">close</span>
           </button>
-        </div>
 
-        <ul>
-          <li><NuxtLink @click="close" to="/">HOME</NuxtLink></li>
-          <li><NuxtLink @click="close" to="/blog">BLOG</NuxtLink></li>
-          <li><NuxtLink @click="close" to="/works">WORKS</NuxtLink></li>
-          <li><NuxtLink @click="close" to="/links">LINKS</NuxtLink></li>
-        </ul>
+          <ul>
+            <li>
+              <NuxtLink @click="close" to="/">HOME</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink @click="close" to="/blog">BLOG</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink @click="close" to="/works">WORKS</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink @click="close" to="/links">LINKS</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </Transition>
   </nav>
 </template>
 
 <style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 .material-icons {
   font-size: 4rem;
-  line-height: 8rem;
+  line-height: 4rem;
 }
 
 .modal-area {
@@ -76,10 +94,15 @@ onMounted(() => {
   background-color: white;
   width: 80%;
   z-index: 2;
+  position: relative;
+  padding: 20px;
 }
 
 .modal-close {
-  margin-right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: center;
 }
 
 .modal-content ul {
@@ -91,7 +114,7 @@ onMounted(() => {
 
 .modal-content ul li {
   border-bottom: solid 2px var(--refia-brown);
-  margin-bottom: 40px;
+  margin: 20px 0;
 }
 
 .modal-content ul li a {

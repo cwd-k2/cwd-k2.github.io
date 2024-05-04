@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
 :root {
   --refia-blue: #5f9fde;
   --refia-red: #de5f6d;
@@ -5,13 +7,10 @@
   --refia-brown: #4a3b3e;
 }
 
-body {
-  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial",
-    "Yu Gothic", "Meiryo", sans-serif;
-  background-color: white;
-}
-
 html {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Arial", "Meiryo", sans-serif;
+  background-color: white;
+  color: var(--refia-brown);
   font-size: 10px;
 }
 

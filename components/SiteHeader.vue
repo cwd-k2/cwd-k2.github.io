@@ -28,6 +28,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   box-shadow: 0 1px 10px #cccccc;
 }
 
@@ -36,7 +37,7 @@ header .logo {
 }
 
 header .logo a {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .header-nav {

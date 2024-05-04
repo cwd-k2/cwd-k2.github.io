@@ -14,6 +14,10 @@ html {
   font-size: 10px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 3.2rem;
 }
@@ -38,6 +42,21 @@ small {
   font-size: 1.6rem;
 }
 
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+small {
+  word-break: break-all;
+}
+
 a:hover {
   color: var(--refia-red);
 }
@@ -48,12 +67,6 @@ a.emphasized {
 
 a.underlined {
   text-decoration: underline;
-}
-
-.container {
-  width: 80%;
-  max-width: 1000px;
-  margin: 40px auto;
 }
 
 @media screen and (max-width: 896px) {

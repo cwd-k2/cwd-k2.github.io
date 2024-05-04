@@ -65,8 +65,8 @@ onMounted(() => {
 }
 
 .material-icons {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .modal-area {

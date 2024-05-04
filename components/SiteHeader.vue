@@ -1,35 +1,50 @@
 <template>
   <header>
-    <h1 class="logo"><NuxtLink to="/">cwd-k2's Homepage</NuxtLink></h1>
+    <div class="container">
+      <h1 class="logo">
+        <NuxtLink to="/">cwd-k2's Homepage</NuxtLink>
+      </h1>
 
-    <nav class="header-nav">
-      <ul>
-        <li><NuxtLink to="/blog">BLOG</NuxtLink></li>
-        <li><NuxtLink to="/works">WORKS</NuxtLink></li>
-        <li><NuxtLink to="/links">LINKS</NuxtLink></li>
-      </ul>
-    </nav>
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <NuxtLink to="/blog">BLOG</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/works">WORKS</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/links">LINKS</NuxtLink>
+          </li>
+        </ul>
+      </nav>
 
-    <nav class="header-nav-sp">
-      <SpModalMenu />
-    </nav>
+      <nav class="header-nav-sp">
+        <SpModalMenu />
+      </nav>
+    </div>
   </header>
 </template>
 
 <style scoped>
 h1 {
-  line-height: 8rem;
+  line-height: 2rem;
 }
 
 header {
   background-color: white;
-  height: 8rem;
   width: 100%;
+  box-shadow: 0 1px 2px #aaa;
+}
+
+header .container {
+  margin: 0 auto;
+  height: 6rem;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 1px 10px #cccccc;
 }
 
 header .logo {
@@ -37,7 +52,7 @@ header .logo {
 }
 
 header .logo a {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .header-nav {
@@ -45,15 +60,15 @@ header .logo a {
   max-width: 300px;
 }
 
-.header-nav > ul {
+.header-nav>ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.header-nav > ul li {
+.header-nav>ul li {
   font-size: 1.6rem;
-  line-height: 8rem;
+  line-height: 1.6rem;
 }
 
 .header-nav-sp {

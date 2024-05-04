@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div style="text-align: center">
       <h2>BLOG</h2>
     </div>

@@ -13,23 +13,6 @@
             <li>Twitter</li>
           </ul>
         </section>
-        <section>
-          <h3>Thanks</h3>
-          <ul>
-            <li>
-              <div>
-                <h4><a class="emphasized" href="https://github.com/refia72">@refia72</a></h4>
-                <p><a href="https://refinyaa.net">refinyaa.net</a></p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h4><a class="emphasized" href="https://github.com/nullnyat">@nullnyat</a></h4>
-                <p><a href="https://nullc.at">nullc.at</a></p>
-              </div>
-            </li>
-          </ul>
-        </section>
       </main>
     </div>
   </div>

@@ -1,0 +1,1 @@
+import{_ as l,c as n,o as t,a as e}from"./prxVUeIW.js";const s={},c=e("div",{style:{"text-align":"center"}},[e("h2",null,"LINKS")],-1),o=e("main",null,[e("section",null,[e("h3",null,"Social Links"),e("ul",null,[e("li",null,"GitHub"),e("li",null,"Twitter")])])],-1),i=[c,o];function a(_,r){return t(),n("div",null,i)}const d=l(s,[["render",a]]);export{d as default};

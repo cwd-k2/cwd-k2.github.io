@@ -11,18 +11,24 @@
           </div>
           <div class="introduction-content">
             <h4>k2 (@cwd-k2)</h4>
-            <p>トーキョーでプログラミングをする仕事をしています</p>
+            <p>トーキョーでプログラミングの仕事をしてます</p>
             <p>趣味でもプログラミングしたりします</p>
+            <p>最近は Haskell と Julia が好き</p>
           </div>
+
+          <img class="top-langs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=cwd-k2&layout=compact" />
         </div>
       </section>
 
       <section>
         <h3>何か</h3>
+        <p>色々</p>
       </section>
 
       <section>
         <h3>書く予定</h3>
+        <p>将来的には書きます</p>
       </section>
 
     </main>
@@ -73,6 +79,11 @@ section {
   height: 100%;
 }
 
+.top-langs {
+  display: block;
+  margin-left: 30px;
+}
+
 @media screen and (max-width: 896px) {
   .introduction-box {
     flex-direction: column;
@@ -84,6 +95,22 @@ section {
     margin-bottom: 30px;
     height: 100px;
     width: 100px;
+  }
+
+  .programming {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-langs {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .top-langs {
+    display: none;
   }
 }
 </style>

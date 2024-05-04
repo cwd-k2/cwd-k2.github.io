@@ -56,7 +56,7 @@ section {
 
 .introduction-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -71,8 +71,6 @@ section {
   border-radius: 50%;
   overflow: hidden;
 }
-
-.introduction-content {}
 
 .introduction-icon img {
   width: 100%;

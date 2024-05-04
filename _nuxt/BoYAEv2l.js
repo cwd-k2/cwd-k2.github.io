@@ -1,0 +1,1 @@
+import{_ as t,c as n,o,a as e}from"./BzhRnSPs.js";const s={},c={class:"container"},_=e("div",{style:{"text-align":"center"}},[e("h2",null,"BLOG")],-1),a=e("main",null,[e("p",null,"これから作るよ")],-1),l=[_,a];function r(i,d){return o(),n("div",c,l)}const h=t(s,[["render",r]]);export{h as default};
